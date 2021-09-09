@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jewellery store catalog filter</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="centering-container">
+      <div class="header__header-content">
+
+
+        <a class="header__logo header__logo--menu header__logo--nojs" href="index.html">
+          <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg>
+        </a>
+
+      </div>
+
+
+    </div>
+  </header>
+  <main class="main main--nojs-inner-page">
+    <div class="centering-container">
+
+
+      <h1 class="visually-hidden">Ctalog filter block</h1>
+      <div class="main__filter-block main__filter-block--nojs-inner-page filter">
+        <form class="filter__form" action="#" method="POST">
+
+          <fieldset class="filter__field-wrapper">
+            <button class="filter__field-toggle" type="button">
+              <span>
+                Product
+              </span>
+              <svg width="15" height="8" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+
+            <div class="filter__field">
+              <div class="filter__input-wrapper">
+                <input type="checkbox" class="visually-hidden" id="necklaces" name="necklaces" checked="">
+
+                <label class="filter__input-description" for="necklaces">Necklaces</label>
+              </div>
+
+              <div class="filter__input-wrapper">
+                <input type="checkbox" class="visually-hidden" id="chokers" name="chokers" checked="">
+
+                <label class="filter__input-description" for="chokers">Chokers</label>
+              </div>
+
+              <div class="filter__input-wrapper">
+                <input type="checkbox" class="visually-hidden" id="rings" name="rings">
+
+                <label class="filter__input-description" for="rings">Rings</label>
+              </div>
+
+              <div class="filter__input-wrapper">
+                <input type="checkbox" class="visually-hidden" id="earrings" name="earrings" checked="">
+
+                <label class="filter__input-description" for="earrings">Earrings</label>
+              </div>
+
+            </div>
+          </fieldset>
+
+          <fieldset class="filter__field-wrapper">
+            <button class="filter__field-toggle" type="button">
+              <span>
+                Material
+              </span>
+              <svg width="15" height="8" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+
+            <div class="filter__field">
+              <div class="filter__input-wrapper">
+                <input type="checkbox" class="visually-hidden" id="gold" name="gold">
+
+                <label class="filter__input-description" for="gold">Gold</label>
+
+              </div>
+
+              <div class="filter__input-wrapper">
+                <input type="checkbox" class="visually-hidden" id="silver" name="silver">
+
+                <label class="filter__input-description" for="silver">Silver</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="filter__field-wrapper">
+            <button class="filter__field-toggle" type="button">
+              <span>
+                Collection
+              </span>
+              <svg width="15" height="8" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+
+            <div class="filter__field">
+
+              <div class="filter__input-wrapper">
+                <input type="checkbox" class="visually-hidden" id="flamingo" name="flamingo">
+
+                <label class="filter__input-description" for="flamingo">Pink flamingo</label>
+              </div>
+
+              <div class="filter__input-wrapper">
+                <input type="checkbox" class="visually-hidden" id="dreams" name="dreams">
+
+                <label class="filter__input-description" for="dreams">Dreams</label>
+              </div>
+
+            </div>
+          </fieldset>
+
+          <fieldset class="filter__field-wrapper">
+            <button class="filter__field-toggle" type="button">
+              <span>
+                Price
+              </span>
+              <svg width="15" height="8" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+
+            <div class="filter__field">
+              <div class="filter__price-slider price-slider">
+
+
+                <div class="price-slider__progress">
+                  <div class="price-slider__pin">
+
+                    <div class="price-slider__input-container price-slider__input-container--min">
+
+                      <label class="price-slider__input-description" for="low-value">&#36;
+                      </label>
+                      <input type="text" name="low-price" id="low-value" value="55">
+                    </div>
+                  </div>
+                  <div class="price-slider__pin">
+                    <div class="price-slider__input-container price-slider__input-container--max">
+                      <label class="price-slider__input-description" for="top-value">&#36;
+                      </label>
+                      <input type="text" name="top-price" id="top-value" value="155">
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="filter__buttons">
+            <button class="filter__button filter__button--submit" type="submit">Apply</button>
+            <button class="filter__button filter__button--reset" type="reset">Clear All</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
